@@ -8,4 +8,4 @@ class UnHappyInputs(Enum):
 
 
 if __name__ == '__main__':
-    print(random.choice(list(UnHappyInputs)))
+    print(random.choice(list(UnHappyInputs)).name)

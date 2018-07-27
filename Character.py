@@ -4,10 +4,12 @@ from State import State
 import threading
 from HappyInputs import HappyInputs
 from UnHappyInputs import UnHappyInputs
+from logger import log
 
 
 class Character(Machine, ):
-    def __init__(self, state, identity):
+    def __init__(self, state, identity, result_accumulator):
+        self._result_accumulator = result_accumulator
         self._id = identity
         self._curr_state = state
         self._actor = None
@@ -28,6 +30,9 @@ class Character(Machine, ):
         # t2.join()
         pass
 
+    def get_id(self):
+        return self._id
+
     def set_actor(self, actor):
         self._actor = actor
 
@@ -40,12 +45,14 @@ class Character(Machine, ):
 
     def show_color(self):
         while 1:
-            print(self._color_switcher.get(self._curr_state))
+            msg = str(self._id) + '::' + self._color_switcher.get(self._curr_state)
+            log(msg)
+            # self._result_accumulator.add(msg)
             time.sleep(5)
 
     def act(self):
         while 1:
-            self._actor.act(self._curr_state)
+            self._actor.act(self._id, self._curr_state)
             time.sleep(5)
 
     def set_react(self, react):
