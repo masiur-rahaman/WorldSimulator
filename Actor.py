@@ -22,7 +22,8 @@ class Actor:
     def act_on_anger(self, initiator_id):
         random_character = self.get_random_character()
         random_unhappy_input = random.choice(list(UnHappyInputs))
-        msg = str(initiator_id)+'----('+random_unhappy_input.name+')---->'+str(random_character.get_id())
+        # msg = str(initiator_id)+'----('+random_unhappy_input.name+')---->'+str(random_character.get_id())
+        msg = '{from:'+str(initiator_id)+',action:\''+random_unhappy_input.name+'\',to:'+str(random_character.get_id())+'}'
         log(msg)
         self._result_accumulator.add(msg)
         random_character.set_react(random_unhappy_input)
@@ -30,7 +31,8 @@ class Actor:
     def act_on_happiness(self, initiator_id):
         random_character = self.get_random_character()
         random_happy_input = random.choice(list(HappyInputs))
-        msg = str(initiator_id)+'----('+random_happy_input.name+')---->'+str(random_character.get_id())
+        # msg = str(initiator_id)+'----('+random_happy_input.name+')---->'+str(random_character.get_id())
+        msg = '{from:'+str(initiator_id)+',action:\''+random_happy_input.name+'\',to:'+str(random_character.get_id())+'}'
         log(msg)
         self._result_accumulator.add(msg)
         random_character.set_react(random_happy_input)
