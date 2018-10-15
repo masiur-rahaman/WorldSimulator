@@ -22,7 +22,7 @@ GK
 - Game theory  —> done(news)
 - Prime numbers   —> done(news)
 - Fibonacci series — > done(news)
-- Quantum theory/mechanics  -> done(news)
+- Quantum theory/mechanics  -> done(news)a
 - Quantum compter —> done
 - Crypto currency —> done(news)
 - AI/Robotics
@@ -673,6 +673,8 @@ Differentiable neural computers (DNCs) are an extension of Neural Turing machine
 Neural network pushdown automata[edit]
 Neural network pushdown automata (NNPDA) are similar to NTMs, but tapes are replaced by analogue stacks that are differentiable and that are trained
 
+winner-take-all (WTA) network
+
 
 The most common global optimization method for training RNNs is genetic algorithms, especially in unstructured networks.
 
@@ -1069,6 +1071,21 @@ Simons Foun
 
 Summary:
 The same techniques used to train self-driving cars and chess-playing computers are now helping physicists explore the complexities of the quantum world. For the first time, physicists have demonstrated that machine learning can reconstruct a quantum system based on relatively few experimental measurements. This method will allow scientists to thoroughly probe systems of particles exponentially faster than conventional, brute-force techniques.
+
+MIT researchers have developed a special-purpose chip that increases the speed of neural-network computations by three to seven times over its predecessors, while reducing power consumption 93 to 96 percent. That could make it practical to run neural networks locally on smartphones or even to embed them in household appliances.
+
+
+One of the ways that computers 'think' is by analysing relationships within large sets of data. An international team has shown that quantum computers can do one such analysis faster than classical computers, for a wider array of data types than was previously expected.
+
+DOE/Lawrence Berkeley National Laboratory
+
+Summary:
+Physicists have demonstrated that computers are ready to tackle the universe's greatest mysteries -- they used neural networks to perform a deep dive into data simulating the subatomic particle soup that may have existed just microseconds after the big bang.
+
+Researchers at MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) have developed a new system that allows programmers to transplant code from one program into another. The programmer can select the code from one program and an insertion point in a second program, and the system will automatically make modifications necessary -- such as changing variable names -- to integrate the code into its new context.
+
+Scientists at The University of Manchester have created the world's first 'molecular robot' that is capable of performing basic tasks including building other molecules.
+
 
 
 
